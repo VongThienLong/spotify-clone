@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Voztify" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/your_color_primary</item>
+    </style>
+
+    <style name="Theme.Voztify" parent="Base.Theme.Voztify" />
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+
+    </style>
+
+    <style name="EditTextWhiteHint" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHint">#ffffff</item>
+        <!-- Các thuộc tính khác nếu cần -->
+    </style>
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">#FFFFFF</item> <!-- Text color -->
+        <item name="android:backgroundTint">@color/colorInactive</item> <!-- Background color -->
+        <item name="android:textAppearance">@style/CustomChipTextAppearance</item> <!-- Text appearance -->
+    </style>
+
+    <style name="CustomChipTextAppearance" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">14sp</item> <!-- Text size -->
+    </style>
+</resources>

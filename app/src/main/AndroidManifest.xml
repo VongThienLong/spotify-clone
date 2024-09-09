@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Voztify"
+        tools:targetApi="31">
+        <activity
+            android:name=".View.TrackDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ActivityUpdatePlaylist"
+            android:exported="false" />
+        <activity
+            android:name=".View.ActivityInsertSongPlaylist"
+            android:exported="false" />
+        <activity
+            android:name=".View.LoginWithoutPassWordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ArtistDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.CreatePlaylistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.PlaylistDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.AlbumDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.PlayMusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.ExploreFragment"
+            android:exported="false" />
+        <activity
+            android:name=".View.HomeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".View.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".View.Login"
+            android:exported="false" />
+        <activity
+            android:name=".View.Register"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".View.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
